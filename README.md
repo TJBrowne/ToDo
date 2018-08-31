@@ -7,7 +7,7 @@ Your assignment is to create a to-do list app with react...from scatch!
 ### Requirements
 
 - Create a new project using [Create React App Minimal](https://github.com/ericandrewlewis/create-react-app-minimal) as your starting point.
-- Have at least three React compoments. *Tasks*, *Task*, and *NewTaskForm*, for example. Each React component will be given props for data it will display and methods it will need.
+- Have at least three React compoments. *Tasks*, *Task*, and *NewTaskForm*, for example. Each React component will be given props for data it will display and methods it will invoke.
 - Have separate folders and files for each component, exporting and importing as needed.
 - Have Data for the application stored and updated using *state*.
 - Have a form with an input field to add a to-do item to your task list. This input should be a controlled component. (Its value should be set using state and onChange it should update state )
