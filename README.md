@@ -1,6 +1,6 @@
 # react-todo
 
-Your assignment is to create a to-do list app with react...from scatch! 
+Your assignment is to create a to-do list app with React...from scatch! 
 
 ![](to-do.jpg)
 
