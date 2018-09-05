@@ -1,10 +1,10 @@
 body {
-    background: url("../images/chalkboard.png");
+    background: url("../images/stars.jpg");
     background-size: cover;
-    overflow: scroll;
     text-align: center;
     padding: 60px;
     line-height: 40px;
+    margin: 5px;
 }
 
 h1 {
@@ -12,3 +12,32 @@ h1 {
     color: whitesmoke;
     font-size: 100px;
 }
+h2 {
+    font-family: 'Jua', sans-serif;
+    color: whitesmoke;
+    font-size: 45px;
+}
+
+.task-item {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+}
+
+ul, li {
+    text-align: center;
+}
+
+.input {
+    font-family: 'Jua', sans-serif;
+    padding: 10px;
+    margin: 30px;
+    font-size: 25px;
+}
+/* .btn {
+    margin: 5px;
+} */
+
+
+

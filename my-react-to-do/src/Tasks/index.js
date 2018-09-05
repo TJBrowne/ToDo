@@ -7,18 +7,19 @@ class Tasks extends Component {
     
     render() {
         return (
-        <div className="task-list">Tasks
-            <ul className="taskList">List{this.state.listItems.map(
+        <div className="task-list">
+            <h2>Tasks</h2>
+            {this.props.taskList.map(
                 text => {
                     return (
-                        <Task
-                        key={text}
-                        value={text}
+                        <ul className="taskList" key={text}>
+                        <Task                        
+                        item={text}                
                         />
+                        </ul> 
                     )
-                }
-            )}              
-            </ul> 
+                }     
+            )}         
         </div>
         );
     }
