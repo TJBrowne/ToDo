@@ -16,10 +16,7 @@ class NewTaskForm extends Component {
         event.preventDefault(); 
         this.props.newListItem(this.state.text);       
     } 
-    deleteItem = (event) => {
-        event.preventDefault(); 
-        this.props.delete(this.state.text);
-    }
+    
     render() {
         return (
         <div className="NewTaskForm">

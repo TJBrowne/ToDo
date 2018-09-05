@@ -21,14 +21,14 @@ class App extends Component {
       return prevState;
     })
    } 
-   
-  removeText = (event) => {
-    // const del = this.state.listItems.indexOf(listItems)
-    // this.setState(prevState => {
-    //   prevState.listItems.splice(del, 1)
-    //   return prevState;
-    // })
-  }
+  componentDidMount = () => {
+    let newTasks = JSON.parse(localStorage.getItem("taskList"));
+      if (newTasks && newTasks.length>0){
+        this.setState({
+          listItems: newTasks,
+        }) 
+      }
+    }
 
   render() {
     return (
@@ -42,12 +42,3 @@ class App extends Component {
   }
 }
 export default App;
-
-// componentDidMount = () => {
-//   let currentTasks = JSON.parse(localStorage.getItem("taskList"));
-//     if (currentTasks && currentTasks.length>0){
-//       this.setState({
-//         tasks: currentTasks,
-//       }) 
-//     }
-//   }
