@@ -16,7 +16,6 @@ class NewTaskForm extends Component {
         event.preventDefault(); 
         this.props.newListItem(this.state.text);       
     } 
-    
     render() {
         return (
         <div className="NewTaskForm">

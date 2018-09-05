@@ -9,13 +9,14 @@ class App extends Component {
 
     this.state = {
       text: " ",  // store what is passed as a value to input
-      listItems: []  // store each value that is passed to to-do list
+      listItems: JSON.parse(localStorage.getItem("listItems"))|| [], // store each value that is passed to to-do list. added localStorage
     }
   } 
   //have each new text render in tasks
   newListItem = (newItem) => {
     this.setState(prevState => {
       prevState.listItems.push(newItem)
+      localStorage.setItem("listItems", JSON.stringify(this.state.listItems))
       return prevState;
     })
    } 
@@ -44,16 +45,3 @@ class App extends Component {
   }
 }
 export default App;
-
-// deleteHanlder(item, event) {
-//   event.preventDefault();
-//   this.props.onDelete(this.props.item[i].id)
-// }
-
-//removeText = (event) => {
-        // const del = this.state.listItems.indexOf(listItems)
-        // this.setState(prevState => {
-        //   prevState.listItems.splice(del, 1)
-        //   return prevState;
-        // })
-      //}

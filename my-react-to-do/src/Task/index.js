@@ -2,17 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 
 class Task extends Component {
-    
-    onClick = () => {
-        // event.preventDefault(); 
+    onClick = () => { 
         this.props.newListItem(this.state.text);
-    }
-    // deleteHandler=(item)=>{
-    //     //call delete from parent here
-    //     this.props.deleteHandler(this.state.item);
-    //     console.log(item);
-    // }
-      
+    }     
     render() {       
         return (
         <div className="each-task">

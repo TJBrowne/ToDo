@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./style.css";
 import Task from "../Task";
 
-
 class Tasks extends Component {
     
     render() {
