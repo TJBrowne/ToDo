@@ -14,7 +14,8 @@ class Tasks extends Component {
                     return (
                         <ul className="taskList" key={text}>
                         <Task                        
-                        item={text}                
+                        item={text} 
+                        deleteHandler={this.props.deleteHandler}               
                         />
                         </ul> 
                     )
