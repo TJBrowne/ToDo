@@ -15,9 +15,12 @@ class App extends Component {
   //have each new text render in tasks
   newListItem = (newItem) => {
     this.setState(prevState => {
-      prevState.listItems.push(newItem)
-      localStorage.setItem("listItems", JSON.stringify(this.state.listItems))
-      return prevState;
+      const listItem = [...prevState.listItems];
+      listItem.push(newItem);
+      localStorage.setItem("listItems", JSON.stringify(listItem))
+      return {
+        listItems: listItem,
+      }
     })
    } 
    deleteHandler = item => {
