@@ -9,9 +9,9 @@ class App extends Component {
 
     this.state = {
       text: " ",  // store what is passed as a value to input
-      listItems: JSON.parse(localStorage.getItem("listItems"))|| [], // store each value that is passed to to-do list. added localStorage
+      listItems: JSON.parse(localStorage.getItem("listItems")) || [], // store each value that is passed to to-do list. added localStorage
     }
-  } 
+  }
   //have each new text render in tasks
   newListItem = (newItem) => {
     this.setState(prevState => {
@@ -22,11 +22,11 @@ class App extends Component {
         listItems: listItem,
       }
     })
-   } 
-   deleteHandler = item => {
+  };
+  deleteHandler = item => {
     let i = this.state.listItems.indexOf(item)
     console.log(i);
-    
+
     let listItems = [...this.state.listItems];
 
     listItems.splice(i, 1);
@@ -42,7 +42,7 @@ class App extends Component {
         <h1>Get It Done! Task List</h1>
         <NewTaskForm newTask={this.state.text} updateText={this.updateText} newListItem={this.newListItem} />
         <div className="NewTask" />
-        <Tasks className='button' taskList={this.state.listItems} deleteHandler={this.deleteHandler}/>
+        <Tasks className='button' taskList={this.state.listItems} deleteHandler={this.deleteHandler} />
       </div>
     )
   }

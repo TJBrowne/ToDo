@@ -24,5 +24,4 @@ class Tasks extends Component {
         );
     }
 }
-
 export default Tasks;
